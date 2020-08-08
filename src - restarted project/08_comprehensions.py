@@ -14,8 +14,15 @@ y = []
 for x in range(5):
     y.append(x + 1)
 
+print("for loop")
 print(y)
 #[1, 2, 3, 4, 5]
+
+# List comprehension
+y = [x for x in range(1, 6)]
+print("List comprehension")
+
+print(y)
 
 print("-----------" * 4)
 
@@ -26,8 +33,14 @@ y = []
 for x in range(10):
     y.append(x**3)
 
+
+print("for loop")
 print(y)
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
+
+y = [x**3 for x in range(10)]
+print("List comprehension")
+print(y)
 
 print("-----------" * 4)
 
@@ -39,6 +52,12 @@ a = ["foo", "bar", "baz"]
 y = []
 for x in a:
     y.append(x.upper())
+print("for loop")
+print(y)
+
+
+print("List comprehension")
+y = [x.upper() for x in a]
 print(y)
 
 print("-----------" * 4)
@@ -47,11 +66,13 @@ print("-----------" * 4)
 # # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
-
+print(x)
 # # What do you need between the square brackets to make it work?
 
 # creating a loop to loop through x
 # added an if statement to check what numbers that were inputted are divisible by 2
-y = [var for var in x if int(var) % 2 == 0]
+y = [z for z in x if int(z) % 2 == 0]
+
+print("EVENS")
 
 print(y)
